@@ -1,0 +1,120 @@
+* { padding: 0; margin: 0; }
+.print { display: none; }
+
+body {
+    background: url('https://www.qualtrics.com/wp-content/uploads/2014/12/UCF-banner.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    font: 12pt 'Noto Serif', serif;
+    padding: 20px;
+    position: relative;
+    z-index: -1;
+}
+
+#dim-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: black;
+    opacity: 0.7;
+}
+
+#side-controls {
+    position: absolute;
+    right: -50px;
+    z-index: -1;
+}
+
+#side-controls > div {
+    width: 50px; height: 50px;
+    background: #ddd;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16pt;
+    font-weight: bold;
+    position: relative;
+}
+
+#side-controls > div:hover {
+    background: white;
+    cursor: pointer;
+}
+
+#side-controls > div > *{
+    position: absolute;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 20px 0;
+    background: #ddd;
+    padding-left: 10px;
+    position: relative;
+    left: -10px;
+    width: 100%;
+}
+
+#contact {
+    padding-bottom: 20px;
+    /* border-bottom: 1px solid black;*/
+}
+
+ul {
+    padding-left: 30px;
+}
+
+#wrapper {
+    width: 700px;
+    background: white;
+    box-shadow: 0 0 10px 0 black;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+}
+
+.contact-icon {
+    font-size: 20pt;
+}
+
+img[src="resources/github.png"] {
+    width: 15px;
+    height: 15px;
+}
+
+img[src="resources/headshot.png"] {
+    clip-path: circle(60px at center);
+    float: left;
+    margin-right: 20px;
+    filter: grayscale(100%);
+    line-height: 100%;
+}
+
+img[src="resources/headshot.png"]:hover {
+    filter: grayscale(0%);
+}
+
+#skills {
+    column-count: 3;
+}
+
+li:not(:last-child) {
+    margin-bottom: 5px; 
+}
+
+p {
+    margin-bottom: 20px;     
+}
+
+#contact-info > *{
+    min-width: 2em;
+}

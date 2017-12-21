@@ -1,0 +1,10 @@
+#side-controls { display: none; }
+img { display: none; }
+svg[role="img"] { display: none; }
+
+body { font-size: 12pt; }
+#wrapper { width: 800px; }
+#skills { column-count: 3; }
+#contact-info > .print { display: inline-block; width: 5em; }
+h2 { border-bottom: 1px solid black; }
+li { margin-bottom: 5px; }

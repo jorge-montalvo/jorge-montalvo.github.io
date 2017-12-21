@@ -1,0 +1,112 @@
+<html>
+<head>
+    <link id="style" href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet"> 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <script>
+        window.onload = function(){
+            var zoom_out = document.getElementById("zoom-out");
+            var zoom_in = document.getElementById("zoom-in");
+            var print = document.getElementById("print");
+
+            zoom_out.onclick = function() {
+                document.body.style.fontSize = "smaller";
+            };
+            zoom_in.onclick = function() {
+                document.body.style.fontSize = "larger";
+            };
+            print.onclick = function() {
+                document.getElementById("style").setAttribute("href", "printer-friendly.css");
+            };
+        };
+    </script>
+</head>
+<body>
+    <div id="dim-background"></div>
+    <div id="wrapper">
+
+        <div id="side-controls">
+            <div id="zoom-in">+</div>
+            <div id="zoom-out">-</div>
+            <div id="print"><i class="fas fa-print"></i></div>
+            <div id="pdf"><i class="fas fa-file-pdf"></i></div>
+            <div id="word"><i class="fas fa-file-word"></i></div>
+        </div>
+
+        <div id="contact">
+            <img src="resources/headshot.png"/>
+            <h1>Jorge Montalvo</h1>
+            <div id="contact-info">
+                <i class="fas fa-phone"></i>
+                <span class="print">Phone:</span>
+                <a href="tel:4155086731">(415) 508-6731</a><br>
+
+                <i class="fas fa-envelope"></i>
+                <span class="print">Email:</span>
+                <a href="mailto:montalvoljorge@gmail.com">montalvoljorge@gmail.com</a><br>
+
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="print">Address:</span>
+                3265 Vishaal Dr, Orlando, FL 32817<br>
+
+                <i class="fab fa-github"></i>
+                <span class="print">GitHub:</span>
+                <a href="https://github.com/jorge-montalvo">https://github.com/jorge-montalvo</a>
+            </div>
+        </div>
+
+        <h2>Objective</h2>
+
+            <p>Internship, part-time, or full-time position in the field of computer technology. Preferably a position that allows me to grow and refine my skills.</p>
+
+        <h2>Education</h2>
+
+            <p>
+                <strong>Bachelor of Science in Information Technology</strong><br>
+                <strong>Minor in Secure Computing and Networks</strong><br>
+                University of Central Florida<br>
+                Expected Graduation: December 2018<br>
+            </p>
+            </p>
+                <strong>Associate's Degree</strong><br>
+                Florida International University
+            </p>
+
+        <h2>Skills</h2>
+
+            <div id="skills">
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>HTML/CSS</li>
+                    <li>Javascript</li>
+                    <li>PHP</li>
+                    <li>JSP</li>
+                    <li>Windows</li>
+                    <li>Windows Server</li>
+                    <li>Linux</li>
+                    <li>macOS</li>
+                    <li>Android</li>
+                    <li>iOS</li>
+                    <li>Bash</li>
+                    <li>PowerShell</li>
+                    <li>SQL/mySQL Server</li>
+                </ul>
+            </div>
+
+        <h2>Projects</h2>
+
+        <h2>Experience</h2>
+
+            <ul>
+                <li>TigerDirect</li>
+                <li>Goodfellas Pizza</li>
+                <li>iD Tech</li>
+            </ul>
+
+    </div>
+</body>
+</html>
